@@ -1,0 +1,134 @@
+*{
+    font-family: 'Open Sans';
+}
+
+body {
+    margin: 0px;
+    background-color: #EEEEEE;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background: white;
+    padding: 10px;
+    box-shadow: 2px 5px 5px #999;
+}
+
+.buttons-sidebar {
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.buttons-sidebar-active {
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 5px solid #08CC7A;
+}
+.buttons-sidebar a:link, a:visited, a:active {
+    text-decoration:none;
+}
+.buttons-sidebar-active a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        justify-content: flex-start;
+        background-color: black;
+    }
+    .navigation a:visited{
+        color: white;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    box-shadow: 2px 5px 5px #999;
+}
+.datos {
+    display: flex;
+    flex-direction: row;
+    background: white;
+}
+.foto {
+    flex: 2;
+    margin: 50px;
+}
+.listado {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-style: italic;
+}
+.saludo {
+    display: flex;
+    background-color: #08CC7A;
+    padding: 5px;
+    width: 50px;
+    color: white;
+    font-style: normal;
+    align-content: center;
+}
+
+.nombre {
+    display: flex;
+    align-content: flex-start;
+}
+
+.lista {
+    list-style:none;
+    padding: 0px;
+}
+
+@media (max-width: 600px) {
+    .datos {
+        flex-direction: column ;
+        justify-content: center;
+    }
+    .listado {
+        flex: 1;
+        padding: 5%;
+    }
+    .foto {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .foto img{
+        width: 100%;
+        height: auto;
+    }
+} 
+
+.div-social {
+    display: flex;
+    flex-direction: row;
+    background-color: #08CC7A;
+    justify-content: center;
+    padding: 20px;
+}
+
+.div-social a {
+    padding: 10px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .div-social {
+        flex-direction: column;
+    }
+    .div-social div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .div-social a{
+        padding-right: 20px;
+    }
+}
